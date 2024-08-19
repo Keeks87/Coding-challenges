@@ -1,4 +1,6 @@
 '''
+Challenge 1
+
 Write a function that doubles every second integer in a list, starting from the
 left.
 
