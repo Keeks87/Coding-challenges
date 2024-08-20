@@ -28,13 +28,13 @@ def generate_hashtag(user_string):
         final_string = "#" + "".join(word.capitalize() for word in user_words)
         # Check if the string is longer than 140 characters
         if len(final_string) > 140 or len(final_string) == 0:
-            print("false")
+            return False
         else:
             print(final_string)
     else:
-        print("false")
+        return False
 
 
 # Get the string from the user
 user_input_string = input("Please enter the sentence you want to edit:")
-generate_hashtag(user_input_string)
+print(generate_hashtag(user_input_string))
